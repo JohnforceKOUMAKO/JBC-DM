@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnforce Koumako - Graphic Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #004080;
+            color: #ffd700;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #003060;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffd700;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section-title {
+            border-bottom: 2px solid #004080;
+            color: #004080;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+        .section-content {
+            margin-bottom: 30px;
+        }
+        .portfolio-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #004080;
+            color: #ffd700;
+            padding: 10px;
+            text-align: center;
+        }
+        .language-selector {
+            margin-top: 20px;
+        }
+        .language-section {
+            display: none;
+        }
+    </style>
+    <script>
+        function showLanguage(language) {
+            document.querySelectorAll('.language-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(language).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Johnforce Koumako - Graphic Designer</h1>
+        <div class="language-selector">
+            <button onclick="showLanguage('fr')">Français</button>
+            <button onclick="showLanguage('en')">English</button>
+        </div>
+    </header>
+    <nav>
+        <a href="#about">À propos / About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="#comments">Commentaires / Comments</a>
+    </nav>
+    <div class="container">
+        <section id="fr" class="language-section">
+            <section id="about">
+                <h2 class="section-title">À propos</h2>
+                <div class="section-content">
+                    <p>Je suis Johnforce KOUMAKO, passionné par le graphisme. Je suis graphic designer et j'ai acquis beaucoup de compétences en création d'identité (logo), des flyers, posters et autres avec les logiciels Adobe pour différentes entreprises. J'ai travaillé pour MJ GROUP, une entreprise de communication, et en freelance après ma formation certifiée au cabinet 3A. Mes centres d'intérêt sont le football et le voyage.</p>
+                </div>
+            </section>
+            <section id="portfolio">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="section-content">
+                    <div class="portfolio-item">
+                        <h3>Projet 1</h3>
+                        <img src="path/to/your/image1.jpg" alt="Image de Projet 1">
+                        <p>Description du projet 1. Expliquez ce que vous avez fait, les technologies utilisées et les résultats obtenus.</p>
+                        <p>Impressions des visiteurs : ...</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3>Projet 2</h3>
+                        <img src="path/to/your/image2.jpg" alt="Image de Projet 2">
+                        <p>Description du projet 2. Expliquez ce que vous avez fait, les technologies utilisées et les résultats obtenus.</p>
+                        <p>Impressions des visiteurs : ...</p>
+                    </div>
+                    <!-- Ajoutez plus de projets si nécessaire -->
+                </div>
+            </section>
+            <section id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="section-content">
+                    <p>Pour toute question ou opportunité de collaboration, n'hésitez pas à me contacter :</p>
+                    <ul>
+                        <li>Email : <a href="mailto:Johnforcekoumako@gmail.com">Johnforcekoumako@gmail.com</a></li>
+                        <li>Numéro de téléphone : +228 97551284</li>
+                        <li>LinkedIn : <a href="https://www.linkedin.com/in/johnforcekoumako" target="_blank">Johnforce Koumako</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="comments">
+                <h2 class="section-title">Commentaires</h2>
+                <div class="section-content">
+                    <p>Vos commentaires sont les bienvenus :</p>
+                    <!-- Intégrez un formulaire de commentaires ou une section pour les témoignages des visiteurs -->
+                </div>
+            </section>
+        </section>
+
+        <section id="en" class="language-section">
+            <section id="about">
+                <h2 class="section-title">About</h2>
+                <div class="section-content">
+                    <p>I am Johnforce KOUMAKO, passionate about graphic design. I am a graphic designer and have acquired many skills in creating identities (logos), flyers, posters, and others with Adobe software for various companies. I worked for MJ GROUP, a communication company, and as a freelancer after my certified training at 3A cabinet. My interests are football and travel.</p>
+                </div>
+            </section>
+            <section id="portfolio">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="section-content">
+                    <div class="portfolio-item">
+                        <h3>Project 1</h3>
+                        <img src="path/to/your/image1.jpg" alt="Image of Project 1">
+                        <p>Description of project 1. Explain what you did, the technologies used, and the results achieved.</p>
+                        <p>Visitor impressions: ...</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3>Project 2</h3>
+                        <img src="path/to/your/image2.jpg" alt="Image of Project 2">
+                        <p>Description of project 2. Explain what you did, the technologies used, and the results achieved.</p>
+                        <p>Visitor impressions: ...</p>
+                    </div>
+                    <!-- Add more projects if needed -->
+                </div>
+            </section>
+            <section id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="section-content">
+                    <p>For any questions or collaboration opportunities, feel free to contact me:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:Johnforcekoumako@gmail.com">Johnforcekoumako@gmail.com</a></li>
+                        <li>Phone: +228 97551284</li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/johnforcekoumako" target="_blank">Johnforce Koumako</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="comments">
+                <h2 class="section-title">Comments</h2>
+                <div class="section-content">
+                    <p>Your comments are welcome:</p>
+                    <!-- Integrate a comment form or a section for visitor testimonials -->
+                </div>
+            </section>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Johnforce Koumako. Tous droits réservés / All rights reserved.
+    </footer>
+    <script>
+        // Set the default language to French
+        showLanguage('fr');
+    </script>
+</body>
+</html>
